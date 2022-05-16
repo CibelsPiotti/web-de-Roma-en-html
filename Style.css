@@ -1,0 +1,300 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+header{
+    background-color: #f5c1ac;
+    padding: 20px 0;
+}
+
+.caja{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+#logo{
+    width: 40%;
+}
+
+nav{
+    position: absolute;
+    top: 60px;
+    right:0px;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #c78c19;
+    text-decoration: underline;
+}
+
+.productos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.productos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 3px solid black;
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+.productos li:hover{
+    border-color: #c78c19;
+}
+
+.productos li:active{
+border-color: #088c19;
+}
+
+.productos h2{
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.productos li:hover h2{
+    font-size: 23px;
+}
+
+.descripcion{
+    font-size: 15px;
+}
+
+.precio{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer{
+    text-align: center;
+    background: url(Imagen/Gama\ Cromática.jpg);
+    background-size: 100%;
+    padding: 20px;
+}
+
+#logo2{
+    padding: 15px;
+    width: 10%;
+}
+.derechos{
+    color: white;
+    font-size: 13px;
+    
+}
+
+form{
+    
+    width: 940px;
+    margin: 60px auto;
+    
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 10px 0 10px;
+    padding-top: 10px;
+
+}
+
+.input-padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox{
+    margin: 25px 0px;
+}
+
+.enviar{
+    width: 40%;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover{
+    transform: scale(1.2);
+    background-color:darkorange;
+}
+
+.tablas{
+    
+    width: 940px;
+    margin: 60px auto;
+
+}
+
+thead{
+    background-color: #f5c1ac;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+caption{
+    font-size: 15px;
+    font-weight: 600;
+    padding: 7px;
+}
+
+td, th{
+    border: 1px solid black;
+    padding: 5px;
+}
+
+/*Aca va la configuracion del Home*/
+
+.informacion{
+    background-color: #fff0e9;
+    background: 100%;
+    padding: 20px 0;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.tituloprincipal{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    padding: 10px;
+    clear:left;
+}
+
+.informacion p{
+    margin: 0 0 1em;
+    text-align: center;
+    line-height: 1.3;
+}
+
+.informacion strong{
+    font-weight: bold;
+}
+
+.informacion em{
+    font-style: italic;
+}
+
+.imageninformacion{
+    width: 25%;
+    float: left;
+    margin: 0 20px 0 20px;
+}
+
+.mapa{
+    padding: 3em 0;
+    text-align: center;
+    background: linear-gradient(#ffffff, #f5c1ac);
+}
+
+.mapacontenido{
+    width: 940px;
+    margin: 0 auto;
+    opacity: 0.8;
+}
+
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.diferenciales{
+    background: #f5c1ac;
+    background-size:cover;
+    padding: 3em 0;
+    width: 100%;
+    margin: 0 auto;
+
+}
+.subtitulo{
+    padding: 7px;
+    margin-left: 50px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.contenidodiferenciales{
+    width: 940px;
+    margin: 0 auto;
+
+}
+.listadiferenciales{
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.item{
+    line-height: 1.5;
+    padding: 5px;
+}
+
+.item:nth-child(2n){
+    font-weight: bold;
+}
+
+.item::before{
+    content: "∙";
+}
+.imagendiferenciales{
+    width: 40%;
+    margin-bottom: 10px;
+    box-shadow: 10px 10px 10px black;
+}
+
+.video{
+    width: 560px;
+    margin: 2em auto;
+}
+
+@media screen and (max-width:400px){
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+
+    .caja, .informacion, .mapacontenido, .contenidodiferenciales, .video, .itemproductos{
+        width: auto;
+    }
+}
+
+
+
+
